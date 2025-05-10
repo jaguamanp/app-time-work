@@ -1,0 +1,5 @@
+<div *ngIf="isLoggedIn">
+    <app-header (menuToggle)="onMenuToggle()"></app-header>
+    <app-nav></app-nav>
+</div>
+<router-outlet />

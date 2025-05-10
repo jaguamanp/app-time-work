@@ -1,0 +1,16 @@
+<p-toolbar class="custom-toolbar">
+  <div class="p-toolbar-group-left">
+    <button class="menu-button" (click)="onMenuToggle()">
+      <i class="pi pi-bars"></i>
+    </button>
+    <h3 class="logo">{{nameAplication}} </h3>
+  </div>
+  <div class="p-toolbar-group-right">
+    <p-menu #menu [model]="userMenu" [popup]="true"></p-menu>
+    <div class="user-info" (click)="menu.toggle($event)">
+      <p-avatar image="https://i.pravatar.cc/40" shape="circle"></p-avatar>
+      <span class="username"> {{userName}} </span>
+      <i class="pi pi-angle-down"></i>
+    </div>
+  </div>
+</p-toolbar>

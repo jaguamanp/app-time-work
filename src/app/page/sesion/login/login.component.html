@@ -1,0 +1,28 @@
+<div class="login-container">
+    <div class="login-box">
+      <h2>Iniciar sesión</h2>
+  
+      <!-- Formulario de login -->
+      <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+        <div class="input-container">
+          <input type="text" id="username" name="username" [(ngModel)]="username" required placeholder="Usuario">
+        </div>
+  
+        <div class="input-container">
+          <input type="password" id="password" name="password" [(ngModel)]="password" required placeholder="Contraseña">
+        </div>
+  
+        <button type="submit" class="login-button">Iniciar sesión</button>
+  
+        <div class="social-login">
+          <button (click)="loginWithGoogle()" class="social-button google">Login con Google</button>
+          <button (click)="loginWithFacebook()" class="social-button facebook">Login con Facebook</button>
+        </div>
+  
+        <div class="register-link">
+          <p>¿No tienes cuenta? <a href="#">Regístrate aquí</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+  

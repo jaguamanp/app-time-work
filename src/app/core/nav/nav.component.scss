@@ -1,0 +1,72 @@
+/* Estilo general del contenedor */
+.layout-sidebar {
+    background-color: #f8f9fa; /* Fondo claro */
+    border-right: 1px solid #ddd; /* Borde lateral */
+    padding: 10px;
+}
+
+/* Estilo del menú */
+.p-panelmenu {
+    width: 100%;
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los encabezados de menú */
+.p-panelmenu .p-panelmenu-header {
+    font-weight: bold;
+    color: #333;
+    background-color: #e9ecef;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+/* Estilo del texto de los encabezados cuando está activo */
+.p-panelmenu .p-panelmenu-header-active {
+    background-color: #1f3751;
+    color: #ffffff;
+}
+
+/* Estilo de los ítems del menú */
+.p-panelmenu .p-panelmenu-content {
+    padding: 0;
+}
+
+.p-panelmenu .p-menuitem-link {
+    color: #495057;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.p-panelmenu .p-menuitem-link:hover {
+    background-color: #f1f1f1;
+    color: #1f3751;
+}
+
+/* Estilo del ícono en los ítems */
+.p-panelmenu .p-menuitem-icon {
+    margin-right: 8px;
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 768px) {
+    .layout-sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .p-panelmenu {
+        width: 100%;
+    }
+}
+
+.layout-static-inactive{
+    left: 0;
+    transform: translate(-100%);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
