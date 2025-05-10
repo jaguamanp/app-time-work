@@ -1,59 +1,73 @@
-# TimeWork
+# Sistema de Gestión de Horas Trabajadas
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
+Esta es una aplicación web desarrollada con **Angular** para llevar el control de las horas trabajadas por usuarios o empleados. Es ideal para pequeñas y medianas empresas que necesitan una solución sencilla y eficiente para la gestión de tiempos.
 
-## Development server
+## Tecnologías utilizadas
 
-To start a local development server, run:
+- [Angular](https://angular.io/) (versión más reciente compatible)
+- [PrimeNG](https://www.primefaces.org/primeng/) `^19.1.2`
+- [PrimeIcons](https://www.npmjs.com/package/primeicons) `^7.0.0`
+- [PrimeNG Themes](https://www.npmjs.com/package/@primeng/themes) `^19.1.2`
+- [Bootstrap](https://getbootstrap.com/) `^5.3.6`
+- [Bootstrap Icons](https://icons.getbootstrap.com/) `^1.12.1`
+- [Feather Icons](https://feathericons.com/) `^4.29.2`
+- [SweetAlert2](https://sweetalert2.github.io/) `^11.21.0`
 
-```bash
-ng serve
+## Características principales
+
+- Registro y edición de horas trabajadas por día y por usuario.
+- Visualización de totales por semana o mes.
+- Integración con alertas personalizadas mediante **SweetAlert2**.
+- Interfaz moderna utilizando **PrimeNG** y **Bootstrap**.
+- Iconografía enriquecida con **Feather Icons** y **Bootstrap Icons**.
+- Soporte para temas visuales a través de `@primeng/themes`.
+
+## Instalación
+
+1. Clona este repositorio:
+```
+   git clone https://github.com/tu-usuario/tu-repositorio.git
+````
+
+2. Instala las dependencias:
+
+   ```
+   npm install
+   ```
+
+3. Ejecuta la aplicación:
+
+   ```bash
+   ng serve
+   ```
+
+4. Abre tu navegador en [http://localhost:4200](http://localhost:4200)
+
+## Scripts útiles
+
+* `ng serve` — Inicia el servidor de desarrollo.
+* `ng build` — Genera una versión de producción.
+* `ng test` — Ejecuta los tests unitarios.
+
+## Estructura del proyecto
+
+```
+src/
+├── app/
+│   ├── components/
+│   ├── services/
+│   ├── models/
+│   └── pages/
+├── assets/
+├── environments/
+└── index.html
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Contribuciones
 
-## Code scaffolding
+¡Las contribuciones son bienvenidas! Puedes abrir issues o enviar pull requests.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Licencia
 
-```bash
-ng generate component component-name
-```
+Este proyecto está licenciado bajo la MIT License.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
